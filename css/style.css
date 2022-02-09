@@ -174,6 +174,11 @@ section .cognito {
   background-color: #c24b23 !important;
 }
 
+#logo {
+  padding-right: 0%;
+  padding-left: 10px;
+}
+
 @media (max-width: 425px) {
   section nav,
   section article footer {
@@ -189,4 +194,19 @@ section .cognito {
   .cognito {
     margin-left: 2px !important;
   }
+}
+
+#banner {
+  background-image: url('../images/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 70vh;
+  padding: 0%;
+  margin: 0%;
+}
+
+#bannersection {
+  padding: 1px 1px 1px 1px;
 }
