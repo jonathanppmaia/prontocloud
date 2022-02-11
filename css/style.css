@@ -15,15 +15,14 @@ h1 {
 h2 {
   font-size: 2rem;
   color: #254159;
-  margin-bottom: 10px;
-  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 h3 {
   font-size: 1.8rem;
   color: #254159;
-  margin-bottom: 10px;
-  padding-top: 10px;
+  margin-bottom: 20px;
+  padding-top: 20px;
 }
 
 h4 {
@@ -40,20 +39,17 @@ p {
   color: #454545;
 }
 
-ol {
-  margin-left: 30px;
-}
 
-ol li {
+
+ul li {
   font-size: 1.4rem;
   color: #454545;
-  line-height: 1.4;
+  line-height: 1.9;
 }
 
 html {
-  font-family: serif;
-  font-size: 62.5%; /* equivalente a 10px*/
-  box-sizing: border-box;
+  font-size: 62.5%;
+  width: 100%;
 }
 
 body {
@@ -61,10 +57,14 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
-/* Header Style */
-
 .main-container {
   max-width: 100vw;
+}
+
+.container {
+  display: block;
+  float: left;
+  width: 80%;
 }
 
 header {
@@ -84,18 +84,26 @@ header {
   height: 95px;
 }
 
+section {
+  background-color: #ffffff;
+  float: left;
+  font-size: 1.5rem; /* equivalente a 15px*/
+  width: 100%;
+}
+
 section nav {
   display: block;
   float: left;
-  width: 20%;
+  width: 30%;
   font-size: 1.5rem; /*equivalente a 15px*/
 }
 
 nav li {
   background-color: #e3e6e9;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 100%;
+  margin: 5px 2px 5px 2px;
+  height: 30px;
+  padding-left: 10px;
+
 }
 
 nav li:hover {
@@ -111,58 +119,56 @@ nav a:hover {
   color: #385874;
 }
 
-/* Section Style*/
 
-section {
-  background-color: #ffffff;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 1.5rem;
-}
 
 section article {
-  background-color: #ffffff;
   display: block;
   float: right;
-  width: 80%;
-  margin-bottom: 10px;
+  width: 70%;
+  
 }
 
-.container {
-  display: block;
+.container-article{
   margin-left: auto;
   margin-right: auto;
-  width: 80%;
-  margin-top: 20px;
+  padding: 10px;
+  text-align: justify;
 }
 
-.container ol li {
-  line-height: 1.4;
-  padding-bottom: 10px;
-}
-
-/* Form Style */
-
-#tenho-interesse {
+footer {
+  background-color: #254159;
+  color: #ffffff;
   display: block;
   float: left;
+  width: 100%;
+  height: 50px;
 }
 
-.containerform {
+footer p {
+  color: #ffffff;
+  font-size: 1.4rem;
+  padding: 10px;
+}
+
+footer small {
+  font-size: 80%;
+  display: block;
+}
+
+.cog-form__content {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.textfooter {
   padding-top: 10px;
-  background-color: #b8c8d6;
+  padding-left:10px ;
 }
-.containerform h1 {
-  width: 100%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
-.containerform p {
-  width: 100%;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+
+ol{
+  line-height: 1.9;
+  padding-left: 40px;
 }
 
 section .cognito {
@@ -173,24 +179,34 @@ section .cognito {
   overflow: hidden !important;
   background-color: #b8c8d6;
   padding-left: 9%;
+   width: 90%;
+ 
 }
 
 .container #formh1,
+#formp,
 .cognito {
-  background-color: #b8c8d6;
+  margin-left: 5% !important;
+  margin-right: 5% !important;
 }
 #tenho-interesse {
   background-color: #b8c8d6;
   width: 100%;
+  text-align: center;
+  padding-top: 10px;
 }
 
 .cognito {
-  background-color: #b8c8d6;
+ margin-left: auto !important;
+ margin-right: auto !important;
+
+
 }
 
 #tenho-interesse .cog-form__container {
   background-color: #b8c8d6;
-  margin-left: 0px !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 #tenho-interesse .cog-form__content {
@@ -201,54 +217,170 @@ section .cognito {
   background-color: #c24b23 !important;
 }
 
-footer {
-  background-color: #254159;
-  color: #ffffff;
-  display: block;
-  float: left;
-  width: 100%;
+#logo {
+  padding-right: 0%;
+  padding-left: 10px;
 }
 
-footer p {
-  color: #ffffff;
-  font-size: 1.4rem;
-}
-
-footer small {
-  font-size: 80%;
-  display: block;
-  margin-bottom: 10px;
-}
-
-@media (max-width: 425px) {
-  section nav,
-  .container,
-  section,
-  article,
-  footer {
+@media (max-width: 768px) {
+  section nav, .container,
+  section article, article, footer {
     width: 100%;
-    float: left;
   }
 
-  article {
-    float: left;
-  }
 
-  section {
-    width: 100% !important;
-  }
-
-  .container {
-    padding-left: 1%;
-    padding-right: 1%;
-  }
   .container #formh1,
   #formp,
   .cognito {
     margin-left: 2px !important;
   }
-  #tenho-interesse {
+
+  img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .headerimg {
+    display: block;
+   
+    padding-left: 10px;
+    
+  }
+  h1 {
+    font-size: 2rem;
+    color: #254159;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    color: #254159;
+    margin-bottom: 20px;
+    margin-top: 5px;
+  }
+  
+  h3 {
+    font-size: 1.6rem;
+    color: #254159;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  h4 {
+    font-size: 1.4rem;
+    color: #254159;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+    line-height: 1.4;
+    color: #454545;
+  }
+  
+  ol li {
+    font-size: 1.2rem;
+    line-height: 1.9;
+  }
+
+  section .cognito {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 380px;
+    overflow: hidden !important;
     background-color: #b8c8d6;
+    padding-left: 5%;
+     width: 90%;
+  
+
+  
+}
+
+@media (max-width: 320px) {
+  section nav, .container,
+  section article, article, footer {
     width: 100%;
   }
+
+
+  .container #formh1,
+  #formp,
+  .cognito {
+    margin-left: 2px !important;
+  }
+
+  img {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .headerimg {
+    display: block;
+   
+    padding-left: 10px;
+    
+  }
+  h1 {
+    font-size: 1.2rem;
+    color: #254159;
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1rem;
+    color: #254159;
+    margin-bottom: 20px;
+  }
+  
+  h3 {
+    font-size: 0.9rem;
+    color: #254159;
+    margin-bottom: 20px;
+    padding-top: 20px;
+  }
+  
+  h4 {
+    font-size: 0.8rem;
+    color: #254159;
+    margin-bottom: 10px;
+    padding-top: 10px;
+  }
+  
+  p {
+    margin-bottom: 5px;
+    line-height: 1.2;
+    color: #454545;
+  }
+
+  section .cognito {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 380px;
+    overflow: hidden !important;
+    background-color: #b8c8d6;
+    padding-left: 5%;
+    width: 80%;
+  
+
+  
 }
+
+#banner {
+  background-image: url('../images/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 70vh;
+  padding: 0%;
+  margin: 0%;
+}
+
+#bannersection {
+  padding: 1px 1px 1px 1px;
+}
+
