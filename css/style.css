@@ -103,6 +103,7 @@ nav li {
   margin: 5px 2px 5px 2px;
   height: 30px;
   padding-left: 10px;
+  list-style-type: none;
 
 }
 
@@ -324,26 +325,26 @@ section .cognito {
     
   }
   h1 {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
     color: #254159;
     margin-bottom: 20px;
   }
   
   h2 {
-    font-size: 1rem;
+    font-size: 1.4rem;
     color: #254159;
     margin-bottom: 20px;
   }
   
   h3 {
-    font-size: 0.9rem;
+    font-size: 1.2rem;
     color: #254159;
     margin-bottom: 20px;
     padding-top: 20px;
   }
   
   h4 {
-    font-size: 0.8rem;
+    font-size: 1rem;
     color: #254159;
     margin-bottom: 10px;
     padding-top: 10px;
