@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ProntoCLoud - Newsletter</title>
     <style>
       * {
@@ -17,6 +18,16 @@
       }
       html {
         font-size: 62.5%;
+        width: 100% !important;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      body {
+        margin-left: auto;
+        margin-right: auto;
+        width:800px;
+
       }
 
       img {
@@ -24,53 +35,83 @@
         height: auto;
       }
 
+      p {
+        line-height: 1.6rem;
+        font-size: 16px;
+       text-align: justify;
+      }
+
+      table{
+        margin-left: auto;
+        margin-right: auto;
+      }
+
       @media (max-width: 600px) {
+        body {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%
+
+      }
         table {
           max-width: 100% !important;
-          
         }
 
         img {
-        max-width: 100%;
-        height: auto;
-      }
+          max-width: 100%;
+          height: auto;
+        }
 
         h1 {
           font-size: 1rem;
+        }
+        td a {
+          font-size: 12px !important;
+          text-decoration: none;
+          color: #fff;
         }
       }
       @media (max-width: 320px) {
         table {
           max-width: 100% !important;
-       
         }
 
         img {
-        max-width: 100%;
-        height: auto;
-      }
+          max-width: 100% !important;
+          height: auto;
+        }
 
         h1 {
           font-size: 1rem;
+        }
+
+        p {
+          margin-right: 10px;
+        }
+
+        td a {
+          font-size: 10px !important;
+          text-decoration: none;
+          color: #fff;
         }
       }
     </style>
   </head>
   <body style="background-color: #f0f0f0">
     <table
-      style="
-        background-color: #fff;
-        width: 600px;
-        margin: 20px auto;
-        font-family: sans-serif;
-      "
+      style="background-color: #fff; margin: 20px auto; font-family: sans-serif"
     >
       <tr>
         <td style="width: 10px"></td>
         <td>
           <a href="#">
             <img
-              style="border: 0; display: block; margin: 20px 20px 0px"
+              style="
+                border: 0;
+                display: block;
+                margin: 20px 20px 0px;
+                margin: 0;
+              "
               src="https://www.prontocloud.com.br/wp-content/uploads/2015/05/prontocloud.png"
               alt="Aprenda a criar o site do seu negócio"
           /></a>
@@ -79,8 +120,8 @@
       <tr>
         <td style="width: 10px"></td>
         <td>
-          <div style="padding: 20px">
-            <h1 style="color: #385874">
+          <div style="padding: 20px; line-height: 1.6rem">
+            <h1 style="color: #385874; padding: 10px 0 0 0; font-size: 18px;">
               Aprenda a criar o site do seu negócio
             </h1>
 
@@ -135,7 +176,7 @@
         >
           <a
             style="font-size: 20px; text-decoration: none; color: #fff"
-            href="#"
+            href="./index.html"
             >Conheça nossas soluções</a
           >
         </span>
