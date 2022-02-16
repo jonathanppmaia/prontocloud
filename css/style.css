@@ -39,8 +39,6 @@ p {
   color: #454545;
 }
 
-
-
 ul li {
   font-size: 1.4rem;
   color: #454545;
@@ -65,6 +63,7 @@ body {
   display: block;
   float: left;
   width: 80%;
+  padding-left: 10px;
 }
 
 header {
@@ -103,7 +102,7 @@ nav li {
   margin: 5px 2px 5px 2px;
   height: 30px;
   padding-left: 10px;
-
+  list-style-type: none;
 }
 
 nav li:hover {
@@ -119,16 +118,13 @@ nav a:hover {
   color: #385874;
 }
 
-
-
 section article {
   display: block;
   float: right;
   width: 70%;
-  
 }
 
-.container-article{
+.container-article {
   margin-left: auto;
   margin-right: auto;
   padding: 10px;
@@ -163,10 +159,10 @@ footer small {
 
 .textfooter {
   padding-top: 10px;
-  padding-left:10px ;
+  padding-left: 10px;
 }
 
-ol{
+ol {
   line-height: 1.9;
   padding-left: 40px;
 }
@@ -179,8 +175,7 @@ section .cognito {
   overflow: hidden !important;
   background-color: #b8c8d6;
   padding-left: 9%;
-   width: 90%;
- 
+  width: 90%;
 }
 
 .container #formh1,
@@ -197,10 +192,8 @@ section .cognito {
 }
 
 .cognito {
- margin-left: auto !important;
- margin-right: auto !important;
-
-
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
 
 #tenho-interesse .cog-form__container {
@@ -223,11 +216,13 @@ section .cognito {
 }
 
 @media (max-width: 768px) {
-  section nav, .container,
-  section article, article, footer {
+  section nav,
+  .container,
+  section article,
+  article,
+  footer {
     width: 100%;
   }
-
 
   .container #formh1,
   #formp,
@@ -242,44 +237,43 @@ section .cognito {
 
   .headerimg {
     display: block;
-   
+
     padding-left: 10px;
-    
   }
   h1 {
     font-size: 2rem;
     color: #254159;
     margin-bottom: 20px;
   }
-  
+
   h2 {
     font-size: 1.8rem;
     color: #254159;
     margin-bottom: 20px;
     margin-top: 5px;
   }
-  
+
   h3 {
     font-size: 1.6rem;
     color: #254159;
     margin-bottom: 20px;
     padding-top: 20px;
   }
-  
+
   h4 {
     font-size: 1.4rem;
     color: #254159;
     margin-bottom: 10px;
     padding-top: 10px;
   }
-  
+
   p {
     font-size: 1.2rem;
     padding-bottom: 5px;
     line-height: 1.4;
     color: #454545;
   }
-  
+
   ol li {
     font-size: 1.2rem;
     line-height: 1.9;
@@ -293,18 +287,18 @@ section .cognito {
     overflow: hidden !important;
     background-color: #b8c8d6;
     padding-left: 5%;
-     width: 90%;
-  
-
-  
+    width: 90%;
+  }
 }
 
 @media (max-width: 320px) {
-  section nav, .container,
-  section article, article, footer {
+  section nav,
+  .container,
+  section article,
+  article,
+  footer {
     width: 100%;
   }
-
 
   .container #formh1,
   #formp,
@@ -319,36 +313,35 @@ section .cognito {
 
   .headerimg {
     display: block;
-   
+
     padding-left: 10px;
-    
   }
   h1 {
     font-size: 1.6rem;
     color: #254159;
     margin-bottom: 20px;
   }
-  
+
   h2 {
     font-size: 1.4rem;
     color: #254159;
     margin-bottom: 20px;
   }
-  
+
   h3 {
     font-size: 1.2rem;
     color: #254159;
     margin-bottom: 20px;
     padding-top: 20px;
   }
-  
+
   h4 {
     font-size: 1rem;
     color: #254159;
     margin-bottom: 10px;
     padding-top: 10px;
   }
-  
+
   p {
     margin-bottom: 5px;
     line-height: 1.2;
@@ -364,10 +357,11 @@ section .cognito {
     background-color: #b8c8d6;
     padding-left: 5%;
     width: 80%;
-  
-    
+  }
 
-  
+  .button-cta {
+    display: none;
+  }
 }
 
 #banner {
@@ -385,3 +379,77 @@ section .cognito {
   padding: 1px 1px 1px 1px;
 }
 
+#banner {
+  background-image: url('../images/banner.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 60vh;
+  padding: 0%;
+  margin: 0%;
+}
+
+.legenda-container {
+  width: auto;
+  float: right;
+  margin: 10vh 10vh 0 0;
+}
+
+.legenda {
+  background-color: rgba(255, 255, 255, 0.6);
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 2rem;
+}
+
+.legenda h5,
+.legenda h4 {
+  color: #254159;
+  line-height: 150%;
+}
+
+.button-cta {
+  border-radius: 5px;
+  display: inline;
+  background-color: #c24b23;
+  color: #ffffff;
+  font-size: 2rem;
+  box-shadow: 1px 1px 4px rgb(87, 86, 86);
+  padding: 10px 15px;
+  width: auto;
+  text-align: center;
+  margin: 10px;
+  text-decoration: none;
+  font-weight: 400;
+  float: left;
+}
+
+#saiba-mais {
+  background: #eaeff3;
+  padding: 40px 0;
+}
+
+#saiba-mais p,
+#saiba-mais img {
+  width: 45%;
+  display: block;
+  float: left;
+  padding: 20px 20px;
+}
+
+dl {
+
+}
+
+dt {
+  font-family: "Open Sans";
+  font-weight: 700;
+  font-size: 1.6rem;
+  
+}
+
+dd {
+margin: 20px;
+ font-size: 1.4rem;
+}
