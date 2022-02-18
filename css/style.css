@@ -43,6 +43,10 @@ p {
   color: #454545;
 }
 
+small{
+  padding-top: 5px;
+}
+
 ul li {
   font-size: 1.4rem;
   color: #454545;
