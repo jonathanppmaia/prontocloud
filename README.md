@@ -33,3 +33,12 @@
 - Post para redes sociais: texto + foto + url curta
 - Incluir hospedagem (servidor web) 
 - Git - histórico de evolução (commits detalhados)
+
+## URL
+Uniform Resource Locator
+
+
+- URL amigável: humanos e meacanismos de busca
+
+https://url.gratis/xao9Ni
+https://ebaconline.com.br/front-end-profession
